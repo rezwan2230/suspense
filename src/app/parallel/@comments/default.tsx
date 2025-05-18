@@ -1,7 +1,4 @@
-import { delay } from "@/utils/delay";
-
-const Commentpage = async () => {
-  await delay(2000);
+const Default = () => {
   return (
     <div className="max-w-7xl mx-auto flex flex-col gap-5">
       <div className=" bg-cyan-600 h-[200px] w-full flex justify-center items-center">
@@ -11,4 +8,4 @@ const Commentpage = async () => {
   );
 };
 
-export default Commentpage;
+export default Default;

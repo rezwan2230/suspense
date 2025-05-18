@@ -32,6 +32,7 @@ export default function RootLayout({
         <Link href="/">Home</Link>
         <Link href="/dashboard">Dashboard</Link>
         <Link href="/parallel">Parallel</Link>
+        <Link href="/parallel/test">Test Route</Link>
       </header>
         {children}
       </body>
