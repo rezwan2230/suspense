@@ -5,7 +5,7 @@ export default function Home() {
     <div>
       <header className="flex gap-6 pl-20 pt-10">
         <Link href="/">Home</Link>
-        <Link href="/">Suspanse</Link>
+        <Link href="/dashboard">Dashboard</Link>
       </header>
     </div>
   );
