@@ -8,12 +8,16 @@ import ComponentErrorCard from "./_components/ComponentErrorCard";
 const DashBoardpage = () => {
   return (
     <div className="flex justify-center items-center gap-10 h-screen">
-      <ErrorBoundary fallback={<ComponentErrorCard/>}>
+      <ErrorBoundary fallback={<ComponentErrorCard />}>
         <Suspense fallback={<ComponentOneLoading />}>
           <ComponentOne />
         </Suspense>
       </ErrorBoundary>
-      <ComponentTwo />
+      <ErrorBoundary fallback={<ComponentErrorCard />}>
+        <Suspense fallback={<ComponentOneLoading />}>
+          <ComponentTwo />
+        </Suspense>
+      </ErrorBoundary>
     </div>
   );
 };
